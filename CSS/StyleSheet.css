@@ -95,7 +95,7 @@ footer {
     background: #b2ad6dff; /* sage */
     color: #fff;
     text-align: center;
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
     bottom: 0;
 }
@@ -109,4 +109,157 @@ footer {
 .container footer {
     border: red 1px solid;
     max-width: 1500px;
+}
+/* Animals Grid Styling */
+.animal-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.animal-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.animal-box-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+/* Reset default margins and paddings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1500px;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+/* Body Styling */
+body {
+    font-family: "Chewy", sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    letter-spacing: 0.5px; /* Add letter spacing */
+}
+
+/* Header Styling */
+header {
+    background: #b2ad6dff; /* sage */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    letter-spacing: 1px; /* Add letter spacing */
+}
+
+header h1 {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #363636; /* Underrubriker <h2> (grå text). */
+    margin-bottom: 10px;
+}
+
+section h3 {
+    color: #646464; /* Underrubriker <h3> (grå text). */
+    margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background: #b2ad6dff; /* sage */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Animals Grid Styling */
+.animal-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.animal-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
