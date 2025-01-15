@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Välkommen till Systementor Zoo</h1>
+            <h1>Systementor Zoo</h1>
             <nav>
                 <ul>
                     <li><a href="#home">Hem</a></li>
@@ -24,50 +24,71 @@
         <div class="container">
             <section class="home">
                 <h2>Hem</h2>
-                <p>Välkommen till Systementor Zoo! Utforska våra fantastiska 
-                    djur och lär dig mer om våra bevarandeinsatser.</p>
+                <p>Välkommen till Systementor Zoo! Utforska våra fantastiska djur och lär dig mer om våra bevarandeinsatser.</p>
             </section>
-        </div class="container">
-        <div class="container">
             <section class="about">
                 <h2>Om oss</h2>
-                <p>Systementor Zoo är dedikerat till bevarandet av vilda djur 
-                    och att utbilda allmänheten om vikten av att skydda vår naturliga värld.</p>
+                <p>Systementor Zoo är dedikerat till bevarandet av vilda djur och att utbilda allmänheten om vikten av att skydda vår naturliga värld.</p>
             </section>
-        </div>
-        <div class="container">
             <section class="playground">
                 <h2>Lekpark till barnen</h2>
-                <p>Besök vår lekplats för att lära dig mer om djur och deras 
-                    naturliga livsmiljöer.</p>
+                <p>Besök vår lekplats för att lära dig mer om djur och deras naturliga livsmiljöer.</p>
                 <h3>Lekplatsen Lejonet</h3>
                 <p>En lekplats för barnen att leka och lära sig om djuret Lejonet.</p>
                 <h3>Lekplatsen Elefanten</h3>
                 <p>En lekplats för barnen att leka och lära sig om djuret Elefanten.</p>
             </section>
-        </div>
-        <div class="container">
             <section class="restaurants">
                 <h2>Restauranger</h2>
                 <p>Njut av en måltid i vår restaurang med utsikt över djuren.</p>
             </section>
-        </div>
-        <div class="container">
             <section class="animals">
                 <h2>Djur</h2>
-                <p>Möt vårt mångsidiga utbud av djur från hela världen. 
-                    Varje art har en unik historia att berätta.</p>
+                <p>Möt vårt mångsidiga utbud av djur från hela världen. Varje art har en unik historia att berätta.</p>
+                <ul class="animal-list">
+                    <li class="animal-box">
+                        <h3>Röd panda</h3>
+                        <img src="Images/RedPanda.jpg" alt="Röd panda som hänger på en gren">
+                        <p>Röd panda är en liten panda.</p>
+                    </li>
+                    <li class="animal-box">
+                        <h3>Surikat</h3>
+                        <img src="Images/meerkat.jpg" alt="Fyra Surikater som sitter">
+                        <p>Surikater lever i flock.</p>
+                    </li>
+                    <li class="animal-box">
+                        <h3>Koala</h3>
+                        <img src="Images/koala.jpg" alt="En Koala som sitter i ett träd">
+                        <p>Koalor lever i träd.</p>
+                    </li>
+                    <li class="animal-box">
+                        <h3>Sengångare</h3>
+                        <img src="Images/sloth.jpg" alt="En sengångare som sitter i ett träd">
+                        <p>Sengångare lever i träd och rör sig väldigt långsamt</p>
+                    </li>
+                </ul>
             </section>
-        </div>
-        <div class="container">
-            <section class="contact">
-                <h2>Kontakt</h2>
-                <p>Har du frågor? Kontakta oss via vår kontaktsida.</p>
+            <section class="newsletter">
+                <h2>Nyhetsbrev</h2>
+                <p>Önskar du få Nyhetsbrev av oss? Fyll i formuleret så får du ett Nyhetsbrev varje månad.</p>
+                <form action="https://http-echo-server.azurewebsites.net" method="post">
+                    <div class="form-group">
+                        <label for="fname">Förnamn:</label>
+                        <input type="text" id="fname" name="fname"><br>
+                        <label for="lname">Efternamn:</label>
+                        <input type="text" id="Ename" name="Ename"><br>
+                        <label for="birthday">Birthday:</label>
+                        <input type="date" id="birthday" name="birthday"><br>
+                        <label for="email">E-post:</label>
+                        <input type="email" id="email" name="email">
+                        <button class="btn-primary rounded-0">Submit</button>
+                    </div>
+                </form>
             </section>
         </div>
     </main>
     <footer>
-        <div class="container footer">
+        <div class="container">
             <p>&copy; 2025 Systementor Zoo</p>
         </div>
     </footer>
