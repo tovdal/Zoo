@@ -4,6 +4,7 @@
 --lion: #a78a60ff;
 --caf-noir: #502f0cff;
 --satin-sheen-gold: #ba9344ff; */
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
 *,
 *::before,
 *::after {
@@ -33,22 +34,22 @@ p {
   padding:0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
-
 /* Body Styling */
 body {
     font-family: "Chewy", sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
+    letter-spacing: 0.5px; /* Add letter spacing */
 }
 
 /* Header Styling */
 header {
-    background: #b2ad6dff;
+    background: #b2ad6dff; /* sage */
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    letter-spacing: 1px; /* Add letter spacing */
 }
 
 header h1 {
@@ -80,17 +81,32 @@ section {
 }
 
 section h2 {
-    color: #502f0c; /* caf-noir */
+    color: #363636; /* Underrubriker <h2> (grå text). */
+    margin-bottom: 10px;
+}
+
+section h3 {
+    color: #646464; /* Underrubriker <h3> (grå text). */
     margin-bottom: 10px;
 }
 
 /* Footer Styling */
 footer {
-    background: #b2ad6dff;
+    background: #b2ad6dff; /* sage */
     color: #fff;
     text-align: center;
-    padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+.container {
+    border: red 1px solid;
+    max-width: 1500px;
+    margin: 10px auto;
+    padding: 20px;
+  }
+
+.container footer {
+    border: red 1px solid;
+    max-width: 1500px;
 }
