@@ -4,13 +4,13 @@
 --lion: #a78a60ff;
 --caf-noir: #502f0cff;
 --satin-sheen-gold: #ba9344ff; */
-@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  font-family: "Chewy", sans-serif;
+  font-family: "DynaPuff", sans-serif;
   background-color: #f4f4f4;
   color: #333;
   letter-spacing: 0.5px; /* Add letter spacing */
@@ -36,6 +36,7 @@ nav .logo {
   display: flex;
   align-items: center;
   font-size: 26px;
+  letter-spacing: 2px;
   font-weight: 600;
   color: #fff;
 }
@@ -78,7 +79,7 @@ nav:hover ul li a {
 .header {
   width: 100%;
   height: 100vh;
-  background-image: url('../Images/HeaderHippo.png');
+  background-image: url('../Images/hippo.png');
   background-position: center;
   background-size: cover;
   overflow-x: hidden;
@@ -87,19 +88,23 @@ nav:hover ul li a {
 .contentHeader {
   margin-top: 9%;
   margin-left: 9%;
-  color: #fff;
+  color: rgb(253, 255, 248);
 }
 
 .contentHeader h1 {
-  font-size: 120px;
+  font-size: 150px;
   line-height: 140px;
   font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
 }
 
 .contentHeader p {
+    font-size: 24px;
   max-width: 500px;
   line-height: 28px;
   opacity: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .links {
@@ -118,6 +123,21 @@ nav:hover ul li a {
   padding: 10px 35px;
   border-radius: 30px;
   margin-right: 15px;
+}
+.btnSeeMore {
+  margin-right: 15px;
+  padding: 10px 35px;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #333;
+}
+.btnSeeMore:hover {
+  background: #fff;
+  color: #333;
 }
 
 .slide-left {
