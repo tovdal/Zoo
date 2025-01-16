@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Systementor Zoo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" 
+    integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" 
+    crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/90a9f7545d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/StyleSheet.css">
+    <title>Systementor Zoo</title>
 </head>
 <body>
     <header>
         <div class="header">
             <nav>
                 <div class="logo">
-                    <img src="Images/systementor-zoo-logo-transparent-Small.png" alt="logo">
+                    <img class="img-RetainSize" src="Images/systementor-zoo-logo-transparent-Small.png" alt="logo">
                     <span>Systementor Zoo</span>
                 </div>
                 <ul>
@@ -32,19 +36,23 @@
                 </div>
             </div>
         </div>
+        <div class="opening-hours">
+            <section>
+                <p> <i class="fa-regular fa-clock"></i> Öppetider Vardag
+                    08:00 till 18:00. Helger 10:00-20:00 </p>
+            </section>
+        </div>
     </header>
     <main>
         <div class="container">
-            <article>
             <section class="about">
                 <h2>Om oss</h2>
-                <img src="Images/frog.jpeg" alt="Bild på en groda">
+                <img src="Images/frogWide.png" alt="Bild på en groda">
                 <p>Systementor Zoo är engagerat i att bevara vilda djur och deras livsmiljöer. 
                     Genom utbildning, forskning och samarbete vill vi inspirera till en djupare 
                     respekt för naturen och dess invånare.
                      Vi tror på en framtid där människor och djur kan leva i harmoni.</p>
             </section>
-        </article>
             <section class="playground">
                 <h2>Lekpark till barnen</h2>
                 <p>Välkommen till vår lekpark! 
@@ -76,38 +84,85 @@
             
             <section class="restaurants">
                 <h2>Restauranger</h2>
+                <img src="Images/resturant.jpg" alt="Resturang på ett zoo">
                 <p>Efter en spännande dag på zoo kan du koppla av och njuta av en god måltid. 
                     Våra restauranger erbjuder utsökt mat med fantastisk utsikt över djuren. 
                     Oavsett om du vill ha ett snabbt mellanmål eller en komplett måltid, 
                     finns något för alla smaker.</p>
             </section>
-            <section class="animals">
-                <h2>Djur</h2>
-                <p>Möt vårt mångsidiga utbud av djur från hela världen. 
-                    Varje art har en unik historia att berätta.</p>
+            <section class="animal-list-section">
+                <h2>Våra Djur</h2>
                 <ul class="animal-list">
                     <li class="animal-box">
-                        <h3>Röd panda</h3>
-                        <img src="Images/RedPanda.jpg" alt="Röd panda som hänger på en gren">
-                        <p>Röd panda är en liten panda.</p>
+                        <div class="animal-image">
+                            <img src="Images/RedPanda.jpg" alt="Röd panda" class="animal-img">
+                        </div>
+                        <div class="animal-info">
+                            <h3>Namn</h3>
+                            <p>Kiki</p>
+                            <h3>Art</h3>
+                            <p>Röd panda</p>
+                            <h3>Vikt</h3>
+                            <p>5 kg</p>
+                            <h3>Länk</h3>
+                            <a href="https://sv.wikipedia.org/wiki/R%C3%B6d_panda" target="_blank">Röd panda - Wikipedia</a>
+                        </div>
                     </li>
+            
                     <li class="animal-box">
-                        <h3>Surikat</h3>
-                        <img src="Images/meerkat.jpg" alt="Fyra Surikater som sitter">
-                        <p>Surikater lever i flock.</p>
+                        <div class="animal-image">
+                            <img src="Images/meerkat.jpg" alt="Surikat" class="animal-img">
+                        </div>
+                        <div class="animal-info">
+                            <h3>Namn</h3>
+                            <p>Chloe
+                                ,Pixie
+                                ,Cupcake
+                                ,Princess</p>
+                            <h3>Art</h3>
+                            <p>Surikat</p>
+                            <h3>Vikt</h3>
+                            <p>0.6 kg</p>
+                            <h3>Länk</h3>
+                            <a href="https://sv.wikipedia.org/wiki/Surikat" target="_blank">Surikat - Wikipedia</a>
+                        </div>
                     </li>
+            
                     <li class="animal-box">
-                        <h3>Koala</h3>
-                        <img src="Images/koala.jpg" alt="En Koala som sitter i ett träd">
-                        <p>Koalor lever i träd.</p>
+                        <div class="animal-image">
+                            <img src="Images/koala.jpg" alt="Koala" class="animal-img">
+                        </div>
+                        <div class="animal-info">
+                            <h3>Namn</h3>
+                            <p>Poppy</p>
+                            <h3>Art</h3>
+                            <p>Koala</p>
+                            <h3>Vikt</h3>
+                            <p>14 kg</p>
+                            <h3>Länk</h3>
+                            <a href="https://sv.wikipedia.org/wiki/Koala" target="_blank">Koala - Wikipedia</a>
+                        </div>
                     </li>
+            
                     <li class="animal-box">
-                        <h3>Sengångare</h3>
-                        <img src="Images/sloth.jpg" alt="En sengångare som sitter i ett träd">
-                        <p>Sengångare lever i träd och rör sig väldigt långsamt</p>
+                        <div class="animal-image">
+                            <img src="Images/sloth.jpg" alt="Sengångare" class="animal-img">
+                        </div>
+                        <div class="animal-info">
+                            <h3>Namn</h3>
+                            <p>Ragnar</p>
+                            <h3>Art</h3>
+                            <p>Sengångare</p>
+                            <h3>Vikt</h3>
+                            <p>7 kg</p>
+                            <h3>Länk</h3>
+                            <a href="https://sv.wikipedia.org/wiki/Seng%C3%A5ngare" target="_blank">Sengångare - Wikipedia</a>
+                        </div>
                     </li>
                 </ul>
             </section>
+            
+            
             <section class="newsletter">
                 <h2>Nyhetsbrev</h2>
                 <p>Önskar du få Nyhetsbrev av oss?
