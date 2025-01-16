@@ -11,7 +11,7 @@ body {
   padding: 0;
   line-height: 1.6;
   font-family: "DynaPuff", sans-serif;
-  background-color: fff;
+  background-color: #fff;
   letter-spacing: 0.5px; /* Add letter spacing */
 }
 
@@ -24,11 +24,14 @@ header h1 {
 }
 
 nav {
+  position: sticky;
   background: #b2ad6dff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 8%;
+  top: 0;
+  z-index: 1000;
 }
 
 nav .logo {
@@ -48,6 +51,8 @@ nav .logo img {
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav ul li {
@@ -70,7 +75,7 @@ nav:hover li a:hover {
   color: #333;
 }
 
-.opening-hours{
+.opening-hours {
   background: #b2ad6dff;
   display: flex;
   justify-content: center;
@@ -85,57 +90,10 @@ nav:hover li a:hover {
   background-image: url('../Images/hippoVingette.png');
   background-position: center;
   background-size: cover;
-  /* overflow-x: hidden; */
-}
-/* Events Grid Styling */
-.events {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  grid-gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  
-}
-
-.event {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.event img {
-  max-width: 100%;
-  max-height: 400px; /* Set a maximum height */
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover; /* Ensure the image covers the box */
-}
-
-.event h3 {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.event p {
-  font-size: 1rem;
-  margin-top: 5px;
-}
-
-.container {
-  width: 1500px;
-  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.img-RetainSize {
-  width: 100%;
-  height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
 }
 
 .contentHeader {
@@ -217,13 +175,8 @@ p.slide-left {
   animation-delay: 2s;
 }
 
-/* Main Content Styling */
-main {
-  padding: 20px;
-}
 
 section {
-  /* padding: 30px; */
 }
 
 section h2 {
@@ -234,6 +187,7 @@ section h2 {
 }
 
 section h3 {
+  text-align: center;
   font-size: 2rem;
   color: #a78a60ff;
   margin-bottom: 10px;
@@ -243,6 +197,9 @@ section p {
   font-size: 1.2rem;
   color: #111111; /* Text color */
   margin-bottom: 20px;
+  max-width: 1200px; /* Set maximum width */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Footer Styling */
@@ -255,10 +212,51 @@ footer {
   bottom: 0;
 }
 
+/* Events Grid Styling */
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1500px;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; /* Center the container */
+}
+
+.event {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1 1 calc(25% - 20px); /* 4 columns with gap */
+  max-width: calc(25% - 20px);
+}
+
+.event img {
+  max-width: 100%;
+  max-height: 400px; /* Set a maximum height */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the image covers the box */
+}
+
+.event h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.event p {
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
 /* Animals Grid Styling */
 .animal-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
   grid-gap: 20px;
   list-style: none;
   padding: 0;
@@ -296,4 +294,3 @@ footer {
     opacity: 1;
   }
 }
-
