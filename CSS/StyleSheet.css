@@ -24,11 +24,11 @@ header h1 {
 }
 
 nav {
+  background: #b2ad6dff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 8%;
-  transition: background 1s;
 }
 
 nav .logo {
@@ -66,16 +66,8 @@ nav:hover {
   background: #b2ad6dff;
 }
 
-nav:hover .logo {
-  color: #333;
-}
-
-nav:hover ul li a {
-  color: #333;
-}
-
 nav:hover li a:hover {
-  color: #fff;
+  color: #333;
 }
 
 .opening-hours{
@@ -89,11 +81,48 @@ nav:hover li a:hover {
 /* Header Content Styling */
 .header {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-image: url('../Images/hippoVingette.png');
   background-position: center;
   background-size: cover;
   /* overflow-x: hidden; */
+}
+/* Events Grid Styling */
+.events {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.event {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.event img {
+  max-width: 100%;
+  max-height: 400px; /* Set a maximum height */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensure the image covers the box */
+}
+
+.event h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.event p {
+  font-size: 1rem;
+  margin-top: 5px;
 }
 
 .container {
@@ -194,11 +223,12 @@ main {
 }
 
 section {
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 section h2 {
-  font-size: 3rem;
+  text-align: center;
+  font-size: 4rem;
   color: #502f0cff;
   margin-bottom: 10px;
 }
@@ -266,3 +296,4 @@ footer {
     opacity: 1;
   }
 }
+
