@@ -4,8 +4,10 @@
 --lion: #a78a60ff;
 --caf-noir: #502f0cff;
 --satin-sheen-gold: #ba9344ff; */
+
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 
+/* General Styles */
 body {
   margin: 0;
   padding: 0;
@@ -22,6 +24,7 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
+/* Navigation Styles */
 nav {
   position: sticky;
   background: #b2ad6dff;
@@ -74,6 +77,7 @@ nav:hover li a:hover {
   color: #333;
 }
 
+/* Opening Hours Styles */
 .opening-hours {
   background: #b2ad6dff;
   display: flex;
@@ -118,6 +122,44 @@ nav:hover li a:hover {
   text-shadow: 0 4px 4px rgba(77, 63, 44, 0.5);
 }
 
+/* Restaurants Section Styling */
+.restaurants {
+  width: 100%;
+  height: 60vh;
+  background-image: url('../Images/resturantFaded.png'); /* Add your restaurant background image */
+  background-color: #ac885cff;
+  background-position: center;
+  background-size: cover; /* Ensure the image fits within the container */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contentRestaurants {
+  margin-top: 2%;
+  margin-left: 9%;
+  color: rgb(253, 255, 248);
+}
+
+.contentRestaurants h2 {
+  color: #eec231;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 600;
+  text-shadow: 0 4px 4px rgba(77, 63, 44, 0.5);
+  padding-bottom: 10px;
+}
+
+.contentRestaurants p {
+  color: #e0c97c;
+  font-size: 1.5rem;
+  max-width: 700px;
+  line-height: 40px;
+  text-shadow: 0 4px 4px rgba(77, 63, 44, 0.5);
+}
+
+/* Links and Buttons */
 .links {
   margin-top: 30px;
   opacity: 0;
@@ -128,9 +170,20 @@ nav:hover li a:hover {
   text-decoration: none;
   display: inline-block;
 }
+.linksResturang a{
+  color: #333333;
+  text-decoration: none;
+  display: inline-block;
+}
 
 .btn {
   border: 2px solid #fff;
+  padding: 10px 35px;
+  border-radius: 30px;
+  margin-right: 15px;
+}
+.btnSolid {
+  background: #e0c97c;
   padding: 10px 35px;
   border-radius: 30px;
   margin-right: 15px;
@@ -144,7 +197,7 @@ nav:hover li a:hover {
 
 .btn:hover {
   background: #fff;
-  color: #333;
+  color: #333333;
 }
 
 .btnSeeMore:hover {
@@ -152,6 +205,7 @@ nav:hover li a:hover {
   color: #333;
 }
 
+/* Animations */
 .slide-left {
   animation: slideleft 1s linear forwards;
 }
@@ -175,7 +229,7 @@ p.slide-left {
   animation-delay: 2s;
 }
 
-
+/* Section Styles */
 section {
 }
 
@@ -202,7 +256,6 @@ section p {
   margin-right: auto;
 }
 
-
 /* Footer Styling */
 footer {
   background: #b2ad6dff; /* sage */
@@ -215,7 +268,6 @@ footer {
 
 /* Events Grid Styling */
 .events {
- 
   display: flex;
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   grid-gap: 20px;
@@ -244,10 +296,12 @@ footer {
   border-radius: 8px;
   object-fit: cover; /* Ensure the image covers the box */
 }
+
 .event h2 {
   font-size: 1.7rem;
   margin-top: 10px;
 }
+
 .event h3 {
   font-size: 1.5rem;
   margin-top: 10px;
@@ -282,27 +336,20 @@ footer {
 }
 
 .animal-box img {
-  -webkit-mask-image: url('../Images/mask.svg'); /* For better browser support */
-  mask-image: url('../Images/mask.svg');
-  -webkit-mask-size: contain; /* Ensure the mask fits within the image */
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat; /* Prevent the mask from repeating */
-  mask-repeat: no-repeat;
+  clip-path: polygon(28% 4%, 45% 3%, 81% 5%, 92% 8%, 95% 22%, 96% 58%, 95% 86%, 85% 93%, 61% 97%, 25% 98%, 6% 93%, 2% 73%, 3% 14%, 10% 5%);
   max-width: 100%;
-  max-height: 400px; /* Set a maximum height */
+  max-height: 650px; /* Set a maximum height */
   height: auto;
   border-radius: 8px;
-  object-fit: cover; /* Ensure the image covers the box */
 }
 
-
+/* About Section Styling */
 .about img {
   scale: .8;
   opacity: 0;
   animation: fade-in linear forwards;
   animation-timeline: view();
   animation-range: 250px 500px;
-
 }
 
 @keyframes fade-in {
