@@ -23,7 +23,7 @@
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
-    <header>
+    <header id="home">
         <div class="header">
                 <div class="contentHeader">
                     <h1 class="slide-left">Systementor Zoo</h1>
@@ -44,7 +44,7 @@
         </div>
     </header>
     <main>
-        <div>
+        <div class="container">
             <section>
               <h2>Kommande Evenets</h2>
               <div class="events">
@@ -72,7 +72,7 @@
             </section>
           </div>
         <div class="container">
-            <section class="about">
+            <section id="about" class="about">
                 <h2>Om oss</h2>
                 <img src="Images/frogWide.png" alt="Bild på en groda">
                 <p>Systementor Zoo är engagerat i att bevara vilda djur och deras livsmiljöer. 
@@ -117,7 +117,7 @@
                     Oavsett om du vill ha ett snabbt mellanmål eller en komplett måltid, 
                     finns något för alla smaker.</p>
             </section>
-            <section class="animal-list-section">
+            <section id="animals" class="animal-list-section">
                 <h2>Våra Djur</h2>
                 <ul class="animal-list">
                     <li class="animal-box">
@@ -186,11 +186,26 @@
                             <a href="https://sv.wikipedia.org/wiki/Seng%C3%A5ngare" target="_blank">Sengångare - Wikipedia</a>
                         </div>
                     </li>
+                    <li class="animal-box">
+                        <div class="animal-image">
+                            <img src="Images/elephantFamily.png" alt="Elefant" class="animal-img">
+                        </div>
+                        <div class="animal-info">
+                            <h3>Namn</h3>
+                            <p>Sussie, Conny, Gunnar</p>
+                            <h3>Art</h3>
+                            <p>Elefanter</p>
+                            <h3>Vikt</h3>
+                            <p>4032 kg, 201 kg, 4021 kg</p>
+                            <h3>Länk</h3>
+                            <a href="https://sv.wikipedia.org/wiki/Elefant" target="_blank">Elefant - Wikipedia</a>
+                        </div>
+                    </li>
                 </ul>
             </section>
             
             
-            <section class="newsletter">
+            <section id="contact" class="newsletter">
                 <h2>Nyhetsbrev</h2>
                 <p>Önskar du få Nyhetsbrev av oss?
                      Fyll i formuleret så får du ett Nyhetsbrev varje månad.</p>
@@ -215,5 +230,7 @@
             <p>&copy; 2025 Systementor Zoo</p>
         </div>
     </footer>
+    <!-- Link to the external JavaScript file -->
+    <script src="scripts.js"></script>
 </body>
 </html>
