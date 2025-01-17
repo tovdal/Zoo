@@ -1,9 +1,9 @@
 /* CSS HEX */
-/* --buff: #cf9b69ff;
---sage: #b2ad6dff;
---lion: #a78a60ff;
---caf-noir: #502f0cff;
---satin-sheen-gold: #ba9344ff; */
+/* --buff: #cf9b69ff;d8933b
+--sage: #b2ad6dff; b5ae35
+--lion: #a78a60ff; ad8641
+--caf-noir: #502f0cff; 552b00
+--satin-sheen-gold: #ba9344ff;bf8f2d */
 
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
 
@@ -27,7 +27,7 @@ header h1 {
 /* Navigation Styles */
 nav {
   position: sticky;
-  background: #b2ad6dff;
+  background: #b5ae35;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +70,7 @@ nav ul li a {
 }
 
 nav:hover {
-  background: #b2ad6dff;
+  background: #b5ae35;
 }
 
 nav:hover li a:hover {
@@ -79,7 +79,7 @@ nav:hover li a:hover {
 
 /* Opening Hours Styles */
 .opening-hours {
-  background: #b2ad6dff;
+  background: #b5ae35;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,8 +99,8 @@ nav:hover li a:hover {
 .header {
   width: 100%;
   height: 60vh;
-  background-image: url('../Images/hippoCropCropWarmthCircle.png');
-  background-color: #ac885cff;
+  background-image: url('../Images/hippoCropCropWarmthCircleWarm.png');
+  background-color: #b38338;
   background-position: center;
   background-size: center; /* Ensure the image fits within the container */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -143,6 +143,8 @@ nav:hover li a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .contentRestaurants {
@@ -238,21 +240,17 @@ p.slide-left {
   animation-delay: 2s;
 }
 
-/* Section Styles */
-section {
-}
-
 section h2 {
   text-align: center;
   font-size: 3rem;
-  color: #502f0cff;
+  color: #552b00;
   margin-bottom: 10px;
 }
 
 section h3 {
   text-align: center;
   font-size: 2rem;
-  color: #a78a60ff;
+  color: #ad8641;
   margin-bottom: 10px;
 }
 
@@ -267,12 +265,24 @@ section p {
 
 /* Footer Styling */
 footer {
-  background: #b2ad6dff; /* sage */
+  background: #b5ae35; /* sage */
   color: #fff;
   text-align: center;
   padding: 10px 0;
   width: 100%;
   bottom: 0;
+}
+.container-events {
+  background-color: #d14d4d;
+  border: 2px solid #969696;
+  margin: 1px 100px 100px 100px;
+  border-radius: 8px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(25% - 20px); /* 4 columns with gap */
+  max-width: calc(100% - 5px);
+  text-align: center;
 }
 
 /* Events Grid Styling */
@@ -369,7 +379,7 @@ footer {
 }
 .tiled-color-container {
   width: 100%;
-  height: 200px; /* Adjust based on your needs */
-  background-color: #b2ad6dff; /* Solid color for the background */
-  clip-path: polygon(0 16%, 2% 20%, 5% 23%, 8% 22%, 11% 20%, 13% 18%, 15% 18%, 17% 19%, 19% 21%, 21% 23%, 23% 24%, 25% 24%, 29% 21%, 32% 19%, 35% 17%, 39% 18%, 42% 20%, 47% 23%, 49% 25%, 53% 28%, 56% 27%, 59% 25%, 61% 23%, 63% 21%, 65% 20%, 67% 20%, 70% 22%, 72% 24%, 74% 25%, 78% 26%, 81% 25%, 82% 24%, 85% 21%, 88% 20%, 91% 21%, 94% 23%, 96% 23%, 99% 21%, 100% 16%, 100% 0%, 0% 0%);
+  height: 100px; /* Adjust based on your needs */
+  background-color: #b5ae35; /* Solid color for the background */
+  clip-path: polygon(0% 21%, 4% 33%, 12% 37%, 20% 34%, 31% 26%, 38% 18%, 45% 18%, 52% 22%, 59% 34%, 69% 45%, 76% 39%, 82% 29%, 87% 19%, 93% 14%, 100% 21%, 100% 0%, 0% 0%);
 }
