@@ -139,6 +139,7 @@ nav:hover li a:hover {
   text-shadow: 0 4px 4px var(--shadow-color);
 }
 
+.about-container
 /* About Section Styling */
 .about {
   overflow: hidden; /* Prevent overflow caused by the animation */
@@ -318,7 +319,6 @@ footer {
   padding: 20px;
   margin: 0 auto; /* Center the container */
   width: 80%; /* Set a specific width */
-  max-width: 1200px;
 }
 
 .event {
@@ -341,7 +341,7 @@ footer {
 }
 
 .event h2 {
-  font-size: 1.7rem;
+  font-size: 1rem;
   margin-top: 10px;
 }
 
@@ -456,8 +456,10 @@ footer {
 .form-group {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
   margin-bottom: 20px;
+  
 }
 
 .form-group label {
@@ -467,11 +469,14 @@ footer {
 }
 
 .form-group input {
+  text-align: center;
   padding: 10px;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  width: 50%;
+  max-width: 300px;
 }
 
 .form-group input:focus {
@@ -500,14 +505,5 @@ footer {
   height: 100px; /* Adjust based on your needs */
   background-color: var(--sage); /* Solid color for the background */
   clip-path: polygon(0% 21%, 4% 33%, 12% 37%, 20% 34%, 31% 26%, 38% 18%, 45% 18%, 52% 22%, 59% 34%, 69% 45%, 76% 39%, 82% 29%, 87% 19%, 93% 14%, 100% 21%, 100% 0%, 0% 0%);
-}
-
-/* Container Styling */
-.container {
-  width: 100%;
-  max-width: 80%;
-  margin: 0 auto; /* Center the container */
-  padding: 20px; /* Optional: Add padding if needed */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
