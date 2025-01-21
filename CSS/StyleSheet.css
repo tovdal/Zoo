@@ -7,9 +7,12 @@
   --lion: #ad8641;
   --caf-noir: #552b00;
   --satin-sheen-gold: #bf8f2d;
+  --background-color: #e6d18c;
   --text-light: #fff;
   --text-dark: #333;
+  --frame-light: #fff9da;
   --shadow-color: rgba(77, 63, 44, 0.5);
+
 }
 
 
@@ -18,10 +21,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "DynaPuff", sans-serif;
-  background-color: var(--text-light);
-  background-image: url('../Images/backgroundWarmth.png');
-  background-position: center;
-  background-size: cover;
+  background-color: var(--background-color);
+  background-image: url('../leaf.svg');
+  background-size: 350px 171px;
+  background-repeat: repeat;
+  background-blend-mode: multiply;
   letter-spacing: 0.5px; /* Add letter spacing */
 }
 
@@ -141,27 +145,21 @@ nav:hover li a:hover {
   opacity: 0;
   text-shadow: 0 4px 4px var(--shadow-color);
 }
-
-.about-container
 /* About Section Styling */
-.about {
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
   overflow: hidden; /* Prevent overflow caused by the animation */
+  margin: 50px auto; /* Center the container */
+  width: 70%; /* Set a specific width */
 }
 
-.about img {
-  scale: .8;
-  opacity: 0;
-  animation: fade-in linear forwards;
-  animation-timeline: view();
-  animation-range: 250px 500px;
+.about {
+
 }
 
-@keyframes fade-in {
-  to {
-    scale: 1;
-    opacity: 1;
-  }
-}
 /* Playground Container Styling */
 .playground-container {
   display: flex;
@@ -404,27 +402,6 @@ footer {
   margin-top: 5px;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-  .event {
-    flex: 1 1 calc(33.33% - 20px); /* 3 columns with gap */
-    max-width: calc(33.33% - 20px);
-  }
-}
-
-@media (max-width: 900px) {
-  .event {
-    flex: 1 1 calc(50% - 20px); /* 2 columns with gap */
-    max-width: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 600px) {
-  .event {
-    flex: 1 1 100%; /* 1 column */
-    max-width: 100%;
-  }
-}
 
 .animals-container {
   display: flex;
@@ -556,3 +533,36 @@ footer {
   clip-path: polygon(0% 21%, 4% 33%, 12% 37%, 20% 34%, 31% 26%, 38% 18%, 45% 18%, 52% 22%, 59% 34%, 69% 45%, 76% 39%, 82% 29%, 87% 19%, 93% 14%, 100% 21%, 100% 0%, 0% 0%);
 }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .event {
+    flex: 1 1 calc(33.33% - 20px); /* 3 columns with gap */
+    max-width: calc(33.33% - 20px);
+  }
+  .animal-box {
+    flex: 1 1 calc(33.33% - 20px); /* 3 columns with gap */
+    max-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .event {
+    flex: 1 1 calc(50% - 20px); /* 2 columns with gap */
+    max-width: calc(50% - 20px);
+  }
+  .animal-box {
+    flex: 1 1 calc(50% - 20px); /* 2 columns with gap */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .event {
+    flex: 1 1 100%; /* 1 column */
+    max-width: 100%;
+  }
+  .animal-box {
+    flex: 1 1 100%; /* 1 column */
+    max-width: 100%;
+  }
+}
