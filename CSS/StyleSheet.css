@@ -15,7 +15,6 @@
 
 }
 
-
 /* General Styles */
 body {
   margin: 0;
@@ -37,14 +36,13 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-/* Navigation Styles */
 nav {
-  position: sticky;
-  background: var(--sage);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 8%;
+  background: var(--sage);
+  position: sticky;
   top: 0;
   z-index: 1000;
 }
@@ -88,6 +86,26 @@ nav:hover {
 
 nav:hover li a:hover {
   color: var(--text-dark);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-left: 20px;
 }
 
 /* Opening Hours Styles */
@@ -156,10 +174,6 @@ nav:hover li a:hover {
   width: 70%; /* Set a specific width */
 }
 
-.about {
-
-}
-
 /* Playground Container Styling */
 .playground-container {
   display: flex;
@@ -179,7 +193,6 @@ nav:hover li a:hover {
 }
 
 .playground h2 {
-  font-size: 2.5rem;
   color: var(--caf-noir);
   margin-bottom: 20px;
 }
@@ -196,7 +209,6 @@ nav:hover li a:hover {
 }
 
 .playground-section h3 {
-  font-size: 2rem;
   color: var(--lion);
   margin-bottom: 10px;
 }
@@ -318,20 +330,17 @@ p.slide-left {
   animation-delay: 2s;
 }
 
-/* Section Styles */
-section {
-}
 
 section h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--caf-noir);
   margin-bottom: 10px;
 }
 
 section h3 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--lion);
   margin-bottom: 10px;
 }
@@ -401,7 +410,6 @@ footer {
   font-size: 1rem;
   margin-top: 5px;
 }
-
 
 .animals-container {
   display: flex;
@@ -535,6 +543,13 @@ footer {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
+  .header {
+    width: 100%; /* Ensure the header does not exceed the viewport width */
+    overflow: hidden;
+  }
+  .header h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
   .event {
     flex: 1 1 calc(33.33% - 20px); /* 3 columns with gap */
     max-width: calc(33.33% - 20px);
@@ -546,6 +561,13 @@ footer {
 }
 
 @media (max-width: 900px) {
+  .header {
+    text-align: center; /* Center align text */
+    width: 100%;
+  }
+  .header h1 {
+    font-size: 1.75rem; /* Further adjust font size for smaller screens */
+  }
   .event {
     flex: 1 1 calc(50% - 20px); /* 2 columns with gap */
     max-width: calc(50% - 20px);
@@ -554,9 +576,35 @@ footer {
     flex: 1 1 calc(50% - 20px); /* 2 columns with gap */
     max-width: calc(50% - 20px);
   }
+  .nav-toggle {
+    display: block; /* Show the toggle button on smaller screens */
+  }
+  .nav-menu {
+    display: none; /* Hide the navigation menu on smaller screens */
+    flex-direction: column;
+    width: 100%;
+    background: var(--sage);
+    position: absolute;
+    top: 90px; /* Adjust based on your header height */
+    left: 0;
+    
+  }
+  .nav-menu.show {
+    display: flex; /* Show the navigation menu when the button is clicked */
+  }
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 600px) {
+  .header {
+    text-align: center; /* Center align text */
+  }
+  .header h1 {
+    font-size: 1.5rem; /* Further adjust font size for smaller screens */
+  }
   .event {
     flex: 1 1 100%; /* 1 column */
     max-width: 100%;
