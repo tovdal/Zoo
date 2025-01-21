@@ -107,7 +107,7 @@ nav:hover li a:hover {
   width: 100%;
   height: 60vh;
   background-image: url('../Images/hippoCropCropWarmthCircleWarm.png');
-  background-color: var(--lion);
+  background-color: #b38338ff;
   background-position: center;
   background-size: center; /* Ensure the image fits within the container */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -137,6 +137,26 @@ nav:hover li a:hover {
   line-height: 40px;
   opacity: 0;
   text-shadow: 0 4px 4px var(--shadow-color);
+}
+
+/* About Section Styling */
+.about {
+  overflow: hidden; /* Prevent overflow caused by the animation */
+}
+
+.about img {
+  scale: .8;
+  opacity: 0;
+  animation: fade-in linear forwards;
+  animation-timeline: view();
+  animation-range: 250px 500px;
+}
+
+@keyframes fade-in {
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
 
 /* Restaurants Section Styling */
@@ -363,17 +383,24 @@ footer {
   justify-content: center;
   gap: 20px;
   list-style: none;
-  padding: 20px;
+  padding: 50px 0px;
   margin: 0 auto; /* Center the container */
-  width: 80%; /* Set a specific width */
+  width: 70%; /* Set a specific width */
   background-color: var(--buff);
   border-radius: 2%;
 }
+
 .animals-container h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--caf-noir);
   margin-bottom: 30px;
+}
+.animals-container h3 {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--caf-noir);
+  margin-bottom: 10px;
 }
 
 /* Animals Grid Styling */
@@ -384,7 +411,7 @@ footer {
   gap: 20px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 50px auto;
 }
 
 .animal-box {
@@ -405,25 +432,66 @@ footer {
   height: auto;
   border-radius: 8px;
 }
-
-/* About Section Styling */
-.about {
-  overflow: hidden; /* Prevent overflow caused by the animation */
+/* Newsletter Container */
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 0px;
+  margin: 50px auto; /* Center the container */
+  width: 70%; /* Set a specific width */
+  background-color: var(--satin-sheen-gold);
+  border-radius: 20px;
+  
+}
+.newsletter-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--caf-noir);
+  margin-bottom: 30px;
 }
 
-.about img {
-  scale: .8;
-  opacity: 0;
-  animation: fade-in linear forwards;
-  animation-timeline: view();
-  animation-range: 250px 500px;
+/* Form Group Styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-@keyframes fade-in {
-  to {
-    scale: 1;
-    opacity: 1;
-  }
+.form-group label {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: var(--sage);
+  outline: none;
+}
+
+.btn-primary {
+  font-family: "DynaPuff", sans-serif;
+  background-color: var(--sage);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--buff);
 }
 
 /* Tiled Color Container */
@@ -442,3 +510,4 @@ footer {
   padding: 20px; /* Optional: Add padding if needed */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
+
