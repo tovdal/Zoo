@@ -19,6 +19,9 @@ body {
   padding: 0;
   font-family: "DynaPuff", sans-serif;
   background-color: var(--text-light);
+  background-image: url('../Images/backgroundWarmth.png');
+  background-position: center;
+  background-size: cover;
   letter-spacing: 0.5px; /* Add letter spacing */
 }
 
@@ -158,6 +161,52 @@ nav:hover li a:hover {
     scale: 1;
     opacity: 1;
   }
+}
+/* Playground Container Styling */
+.playground-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  margin: 50px auto; /* Center the container */
+  width: 70%; /* Set a specific width */
+  background-color: var(--satin-sheen-gold);
+  border-radius: 20px;
+}
+
+/* Playground Section Styling */
+.playground {
+  width: 100%;
+  text-align: center;
+}
+
+.playground h2 {
+  font-size: 2.5rem;
+  color: var(--caf-noir);
+  margin-bottom: 20px;
+}
+
+.playground p {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 20px;
+}
+
+/* Inner Sections Styling */
+.playground-section {
+  margin-bottom: 30px;
+}
+
+.playground-section h3 {
+  font-size: 2rem;
+  color: var(--lion);
+  margin-bottom: 10px;
+}
+
+.playground-section p {
+  font-size: 1rem;
+  color: var(--text-dark);
+  margin-bottom: 10px;
 }
 
 /* Restaurants Section Styling */
