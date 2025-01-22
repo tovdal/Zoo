@@ -557,6 +557,19 @@ footer {
   clip-path: polygon(0% 21%, 4% 33%, 12% 37%, 20% 34%, 31% 26%, 38% 18%, 45% 18%, 52% 22%, 59% 34%, 69% 45%, 76% 39%, 82% 29%, 87% 19%, 93% 14%, 100% 21%, 100% 0%, 0% 0%);
 }
 
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   nav {
