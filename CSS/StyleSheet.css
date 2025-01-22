@@ -38,6 +38,10 @@ body {
 img {
   max-width: 100%;
 }
+a:visited {
+  color: var(--frame-light);
+  text-decoration: none
+}
 
 header h1 {
   margin-bottom: 0.5rem;
@@ -112,7 +116,7 @@ nav:hover li a:hover {
 }
 
 .nav-menu li {
-  margin-left: 20px;
+  margin: 20px;
 }
 
 /* Opening Hours Styles */
@@ -175,6 +179,15 @@ nav:hover li a:hover {
   opacity: 0;
   text-shadow: 0 4px 4px var(--shadow-color);
 }
+
+/* Tiled Color Container Header*/
+.tiled-color-container {
+  width: 100%;
+  height: 100px; /* Adjust based on your needs */
+  background-color: var(--sage); /* Solid color for the background */
+  clip-path: polygon(0% 21%, 4% 33%, 12% 37%, 20% 34%, 31% 26%, 38% 18%, 45% 18%, 52% 22%, 59% 34%, 69% 45%, 76% 39%, 82% 29%, 87% 19%, 93% 14%, 100% 21%, 100% 0%, 0% 0%);
+}
+
 /* About Section Styling */
 .about-container {
   display: flex;
@@ -370,12 +383,23 @@ footer {
   background: var(--sage); /* sage */
   color: var(--text-light);
   text-align: center;
-  padding: 10px 0;
+  padding: 40px 0;
   width: 100%;
   bottom: 0;
 }  
+footer ul {
+  display: flex;
+  justify-content: center;
+}
 
 /* Events Grid Styling */
+.events-container {
+  display: flex;
+  padding: 20px 0px;
+  margin: 0 auto;
+  background-color: var(--frame-light);
+  box-shadow: 0 2px 4px rgba(107, 106, 95, 0.007);
+}
 .events {
   
   display: flex;
@@ -393,10 +417,11 @@ footer {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.082);
   flex: 1 1 calc(25% - 20px); /* 4 columns with gap */
   max-width: calc(25% - 20px);
   text-align: center;
+  box-shadow: 0 2px 4px rgba(107, 106, 95, 0.007);
 }
 
 .event img {
@@ -486,7 +511,7 @@ footer {
   padding: 50px 0px;
   margin: 30px  auto; /* Center the container */
   width: 70%; /* Set a specific width */
-  background-color: var(--satin-sheen-gold);
+  background-color: var(--frame-light);
   border-radius: 20px;
 }
 
@@ -549,13 +574,6 @@ footer {
   background-color: var(--buff);
 }
 
-/* Tiled Color Container */
-.tiled-color-container {
-  width: 100%;
-  height: 100px; /* Adjust based on your needs */
-  background-color: var(--sage); /* Solid color for the background */
-  clip-path: polygon(0% 21%, 4% 33%, 12% 37%, 20% 34%, 31% 26%, 38% 18%, 45% 18%, 52% 22%, 59% 34%, 69% 45%, 76% 39%, 82% 29%, 87% 19%, 93% 14%, 100% 21%, 100% 0%, 0% 0%);
-}
 
 .google-map {
   padding-bottom: 50%;
