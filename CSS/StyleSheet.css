@@ -193,11 +193,22 @@ nav:hover li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding-bottom: 1em;
   overflow: hidden; /* Prevent overflow caused by the animation */
-  margin: 50px auto; /* Center the container */
-  width: 70%; /* Set a specific width */
+  margin: 50px auto; 
+  width: 80%; /* Set a specific width */
+  background-color: var(--frame-light);
+  border-radius: 20px;
 }
+.about-text-block {
+  text-align: center;
+  padding: 20px;
+}
+.about-text-block p {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+}
+
 
 /* Playground Container Styling */
 .playground-container {
@@ -206,7 +217,7 @@ nav:hover li a:hover {
   align-items: center;
   padding: 50px 0;
   margin: 50px auto; /* Center the container */
-  width: 70%; /* Set a specific width */
+  width: 80%; /* Set a specific width */
   background-color: var(--frame-light);
   border-radius: 20px;
 }
@@ -215,6 +226,7 @@ nav:hover li a:hover {
 .playground {
   width: 100%;
   text-align: center;
+  padding: 20px;
 }
 
 .playground h2 {
@@ -455,7 +467,7 @@ footer ul {
   list-style: none;
   padding: 50px 0px;
   margin: 0 auto; /* Center the container */
-  width: 70%; /* Set a specific width */
+  width: 80%; /* Set a specific width */
   background-color: var(--buff);
   border-radius: 2%;
 }
@@ -510,7 +522,7 @@ footer ul {
   gap: 20px;
   padding: 50px 0px;
   margin: 30px  auto; /* Center the container */
-  width: 70%; /* Set a specific width */
+  width: 80%; /* Set a specific width */
   background-color: var(--frame-light);
   border-radius: 20px;
 }
