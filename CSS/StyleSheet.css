@@ -569,14 +569,12 @@ footer ul {
   border-radius: 5px;
   box-sizing: border-box;
   width: 90%;
-
 }
 
 .form-group input:focus {
   border-color: var(--sage);
   outline: none;
 }
-
 
 .btn-primary {
   font-family: "DynaPuff", sans-serif;
@@ -592,7 +590,6 @@ footer ul {
 .btn-primary:hover {
   background-color: var(--buff);
 }
-
 
 .google-map {
   padding-bottom: 50%;
@@ -627,7 +624,6 @@ footer ul {
   .header p {
     font-size: 1.25rem; /* Adjust font size for smaller screens */
   }
-
   .opening-hours section {
     flex-direction: column;
     justify-content: center;
