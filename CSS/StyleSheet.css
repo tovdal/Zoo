@@ -406,8 +406,7 @@ footer ul {
 
 /* Events Grid Styling */
 .events-container {
-  display: flex;
-  padding: 20px 0px;
+  padding: 1.25em 0em;
   margin: 0 auto;
   background-color: var(--frame-light);
   box-shadow: 0 2px 4px rgba(107, 106, 95, 0.007);
@@ -417,9 +416,9 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25em;
   list-style: none;
-  padding: 20px;
+  padding: 1.25em;
   margin: 0 auto; /* Center the container */
   width: 80%; /* Set a specific width */
 }
@@ -428,7 +427,7 @@ footer ul {
   background-color: var(--text-light);
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
+  padding: 1.25em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.082);
   flex: 1 1 calc(25% - 20px); /* 4 columns with gap */
   max-width: calc(25% - 20px);
@@ -490,7 +489,7 @@ footer ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 1.25em;
   list-style: none;
   margin: 50px auto;
   width: 80%; /* Set a specific width */
@@ -500,7 +499,7 @@ footer ul {
   background-color: var(--text-light);
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
+  padding: 1.25em;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   flex: 1 1 calc(33.33% - 20px); /* 3 columns with gap */
@@ -519,7 +518,7 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.25em;
   padding: 50px 0px;
   margin: 30px  auto; /* Center the container */
   width: 80%; /* Set a specific width */
@@ -544,9 +543,7 @@ footer ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-  
+  gap: 0.2em;
 }
 
 .form-group label {
@@ -675,6 +672,9 @@ footer ul {
   newsletter-container {
     flex-direction: column; /* Stack the elements on top of each other */
     width: 80%; /* Adjust the width */
+  }
+  .restaurants {
+    height: 40vh;
   }
 }
 
