@@ -539,11 +539,20 @@ footer ul {
 }
 
 /* Form Group Styling */
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .form-group {
   display: flex;
   flex-direction: column;
+  flex: 1;
   align-items: center;
   gap: 0.2em;
+  max-width: 500px;
 }
 
 .form-group label {
@@ -554,19 +563,20 @@ footer ul {
 
 .form-group input {
   text-align: center;
-  padding: 10px;
+  padding: 1em;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
-  width: 80%;
-  max-width: 300px;
+  width: 90%;
+
 }
 
 .form-group input:focus {
   border-color: var(--sage);
   outline: none;
 }
+
 
 .btn-primary {
   font-family: "DynaPuff", sans-serif;
@@ -628,6 +638,14 @@ footer ul {
   }
   .events {
     width: 100%; /* Adjust the width */
+  }
+  .form-row {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    
+
+    
   }
 }
 
