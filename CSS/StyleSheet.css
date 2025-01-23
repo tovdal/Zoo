@@ -207,7 +207,7 @@ nav:hover li a:hover {
   padding: 50px 0;
   margin: 50px auto; /* Center the container */
   width: 70%; /* Set a specific width */
-  background-color: var(--satin-sheen-gold);
+  background-color: var(--frame-light);
   border-radius: 20px;
 }
 
@@ -647,6 +647,7 @@ footer ul {
     flex: 1 1 calc(50% - 20px); /* 2 columns with gap */
     max-width: calc(50% - 20px);
   }
+  
   .about-container {
     flex-direction: column; /* Stack the elements on top of each other */
     width: 80%; /* Adjust the width */
