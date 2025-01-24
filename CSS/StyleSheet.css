@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 /* CSS HEX Variables */
 :root {
@@ -15,19 +16,19 @@
 }
 * {
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+ /*  outline: 1px solid red; Visar ramar för alla element */
 }
 
 /* General Styles */
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal overflow */
   width: 100%; /* Ensure the body does not exceed the viewport width */
   /* Hadde problem med att det blev ett gap på sidan av sidan, så jag la till detta */
 }
 
 body {
-  font-family: "DynaPuff", sans-serif;
+  font-family: "Quicksand", serif;
   background-color: var(--background-color);
   background-image: url('../leaf.svg');
   background-size: 350px 171px;
@@ -42,12 +43,16 @@ a:visited {
   color: var(--frame-light);
   text-decoration: none
 }
+h1, h2, h3 {
+  font-family: "DynaPuff", sans-serif;
+}
 
 header h1 {
   margin-bottom: 0.5rem;
 }
-
+/* Navigation Styling */
 nav {
+  font-family: "DynaPuff", sans-serif;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -66,55 +71,35 @@ nav .logo {
   font-weight: 600;
   color: var(--text-light);
 }
-
 nav .logo img {
   width: 60px;
   margin-right: 10px;
 }
-
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-
 nav ul li {
   display: inline-block;
   margin: 10px 20px;
 }
-
 nav ul li a {
   text-decoration: none;
   color: var(--text-light);
   font-size: 18px;
   font-weight: 500;
 }
-
-nav:hover {
-  background: var(--sage);
-}
-
-nav:hover li a:hover {
+nav ul li a:hover {
   color: var(--text-dark);
 }
-
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--text-light);
-}
-
 .nav-menu {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 .nav-menu li {
   margin: 20px;
 }
@@ -126,19 +111,16 @@ nav:hover li a:hover {
   justify-content: center;
   padding: 20px;
 }
-
 .opening-hours section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .opening-hours p {
   color: var(--text-light);
   font-size: 1.2rem;
   margin-right: 10px;
 }
-
 .opening-hours span:hover {
   color: var(--text-dark);
 }
@@ -155,7 +137,6 @@ nav:hover li a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow: hidden;
 }
 
 .contentHeader {
@@ -194,9 +175,9 @@ nav:hover li a:hover {
   justify-content: center;
   align-items: center;
   padding-bottom: 1em;
-  overflow: hidden; /* Prevent overflow caused by the animation */
   margin: 50px auto; 
-  width: 80%; /* Set a specific width */
+  width: 70%; /* Set a specific width */
+  overflow: hidden; /* Hide the image edges. */
   background-color: var(--frame-light);
   border-radius: 20px;
 }
@@ -217,7 +198,7 @@ nav:hover li a:hover {
   align-items: center;
   padding: 50px 0;
   margin: 50px auto; /* Center the container */
-  width: 80%; /* Set a specific width */
+  width: 70%; /* Set a specific width */
   background-color: var(--frame-light);
   border-radius: 20px;
 }
@@ -392,6 +373,7 @@ section p {
 
 /* Footer Styling */
 footer {
+  font-family: "DynaPuff", sans-serif;
   background: var(--sage); /* sage */
   color: var(--text-light);
   text-align: center;
@@ -420,7 +402,7 @@ footer ul {
   list-style: none;
   padding: 1.25em;
   margin: 0 auto; /* Center the container */
-  width: 80%; /* Set a specific width */
+  width: 70%; /* Set a specific width */
 }
 
 .event {
@@ -466,7 +448,7 @@ footer ul {
   list-style: none;
   padding: 50px 0px;
   margin: 0 auto; /* Center the container */
-  width: 80%; /* Set a specific width */
+  width: 70%; /* Set a specific width */
   background-color: var(--buff);
   border-radius: 2%;
 }
@@ -492,7 +474,7 @@ footer ul {
   gap: 1.25em;
   list-style: none;
   margin: 50px auto;
-  width: 80%; /* Set a specific width */
+  width: 90%; /* Set a specific width */
 }
 
 .animal-box {
@@ -521,7 +503,7 @@ footer ul {
   gap: 1.25em;
   padding: 50px 0px;
   margin: 30px  auto; /* Center the container */
-  width: 80%; /* Set a specific width */
+  width: 70%; /* Set a specific width */
   background-color: var(--frame-light);
   border-radius: 20px;
 }
