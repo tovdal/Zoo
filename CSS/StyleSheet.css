@@ -94,14 +94,22 @@ nav ul li a:hover {
   color: var(--text-dark);
 }
 .nav-menu {
-  display: flex;
   list-style: none;
+  display: flex;
   padding: 0;
   margin: 0;
 }
 .nav-menu li {
   margin: 20px;
+  
 }
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 
 /* Opening Hours Styles */
 .opening-hours {
@@ -230,7 +238,7 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 /* Restaurants Section Styling */
-.restaurants {
+.restaurant-container {
   width: 100%;
   height: 60vh;
   background-image: url('../Images/resturant.png');
@@ -360,20 +368,6 @@ section p {
   margin-right: auto;
 }
 
-/* Footer Styling */
-footer {
-  font-family: "DynaPuff", sans-serif;
-  background: var(--sage); /* sage */
-  color: var(--text-light);
-  text-align: center;
-  padding: 40px 0;
-  width: 100%;
-  bottom: 0;
-}  
-footer ul {
-  display: flex;
-  justify-content: center;
-}
 
 /* Events Grid Styling */
 .events-container {
@@ -476,6 +470,13 @@ footer ul {
   flex: 1 1 calc(33.33% - 20px); /* 3 columns with gap */
   max-width: calc(33.33% - 20px);
 }
+.animal-box a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+.animal-box a:hover {
+  color: var(--sage);
+}
 
 .animal-box img {
   clip-path: polygon(28% 4%, 45% 3%, 81% 5%, 92% 8%, 95% 22%, 96% 58%, 95% 86%, 85% 93%, 61% 97%, 25% 98%, 6% 93%, 2% 73%, 3% 14%, 10% 5%);
@@ -575,6 +576,22 @@ footer ul {
   position: absolute;
 }
 
+/* Footer Styling */
+footer {
+  font-family: "DynaPuff", sans-serif;
+  background: var(--sage); /* sage */
+  color: var(--text-light);
+  text-align: center;
+  padding: 40px 0;
+  width: 100%;
+  bottom: 0;
+}  
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   nav {
@@ -624,7 +641,7 @@ footer ul {
   }
   .header {
     text-align: center; /* Center align text */
-    height: 35vh;
+    height: 50vh;
   }
   .header h1 {
     font-size: 3rem; /* Further adjust font size for smaller screens */
@@ -647,6 +664,14 @@ footer ul {
     flex-direction: column; /* Stack the elements on top of each other */
     width: 80%; /* Adjust the width */
   }
+  .restaurant-container {
+    height: 100vh;
+  }
+  .contentRestaurants {
+    width: 80%; /* Adjust the width */
+    margin-left: 10%; 
+
+  }
   .animals-container {
     flex-direction: column; /* Stack the elements on top of each other */
     width: 80%; /* Adjust the width */
@@ -663,10 +688,10 @@ footer ul {
 @media (max-width: 600px) {
   .header {
     text-align: center; /* Center align text */
-    height: 35vh;
+    height: 55vh;
   }
   .header h1 {
-    font-size: 2.75rem; /* Further adjust font size for smaller screens */
+    font-size: 2rem; /* Further adjust font size for smaller screens */
   }
   .event {
     flex: 1 1 100%; /* 1 column */
