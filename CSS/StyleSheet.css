@@ -40,7 +40,6 @@ img {
   max-width: 100%;
 }
 a:visited {
-  color: var(--frame-light);
   text-decoration: none
 }
 h1, h2, h3 {
