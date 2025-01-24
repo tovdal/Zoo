@@ -134,24 +134,25 @@ nav ul li a:hover {
 
 /* Header Content Styling */
 .header {
+  position: relative; /* Position the header for proper alignment of content */
   width: 100%;
   height: 60vh;
-  background-image: url('../Images/hippoCropCropWarmthCircleWarm.png');
-  background-color: #b38338ff;
-  background-position: center;
-  background-size: center; /* Ensure the image fits within the container */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
+.header .header-image {
+  width: 100%; /* Make sure the image covers the width */
+  height: 100%; /* Fill the height of the parent container */
+  object-fit: cover; /* Ensure the image covers the entire container without stretching */
+  object-position: center; /* Center the image */
+  position: absolute; /* Position the image behind the content */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Put the image behind the text content */
+}
 .contentHeader {
-  margin-top: 2%;
   margin-left: 9%;
   color: var(--text-light);
 }
-
 .contentHeader h1 {
   font-size: 96px;
   line-height: 140px;
@@ -596,13 +597,9 @@ footer ul {
 @media (max-width: 1200px) {
   nav {
     flex-wrap: wrap; /* Wrap the navigation items */
-  }
-  .header {
-    width: 100%; /* Ensure the header does not exceed the viewport width */
-    height: 40vh;
+    justify-content: center;
   }
   .contentHeader {
-    margin-top: 2%;
     margin-left: 7%;
     color: var(--text-light);
   }
@@ -634,6 +631,9 @@ footer ul {
   nav {
     flex-wrap: wrap; /* Wrap the navigation items */
     justify-content: center; /* Center align the navigation items */
+  }
+  .nav-menu a {
+    font-size: 0.75rem;
   }
   .contentHeader {
     margin-top: 0;
@@ -686,6 +686,9 @@ footer ul {
 }
 
 @media (max-width: 600px) {
+  .nav-menu a {
+    font-size: 0.5rem;
+  }
   .header {
     text-align: center; /* Center align text */
     height: 55vh;
