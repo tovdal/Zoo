@@ -362,7 +362,7 @@ section h3 {
 
 section p {
   font-size: 1.2rem;
-  color: #111111; /* Text color */
+  color: #111111; 
   margin-bottom: 20px;
   max-width: 1200px; /* Set maximum width */
   margin-left: auto;
