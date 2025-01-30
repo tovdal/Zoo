@@ -70,6 +70,16 @@ nav .logo {
   font-weight: 600;
   color: var(--text-light);
 }
+nav .logo a {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: var(--text-light);
+  text-decoration: none;
+
+}
 nav .logo img {
   width: 60px;
   margin-right: 10px;
@@ -150,7 +160,7 @@ nav ul li a:hover {
   z-index: -1; /* Put the image behind the text content */
 }
 .contentHeader {
-  padding-top: 8%;
+  padding-top: 5%;
   margin-left: 9%;
   color: var(--text-light);
 }
