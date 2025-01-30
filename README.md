@@ -13,14 +13,23 @@ Welcome to the Systementor Zoo website project! This project is a static website
 - [License](#license)
 
 ## Project Structure
-.vscode/ settings.json CSS/ ResetSheet.css StyleSheet.css Images/ Index.html MoodBoard/ MoodBoardColorPalette.pur ReferenceImages/ CompetitiveAnalysis.pur GoogleFonts.pur
 
-- `.vscode/`: Contains Visual Studio Code settings.
-- `CSS/`: Contains the CSS files for styling the website.
-- `Images/`: Contains images used in the website.
-- `Index.html`: The main HTML file for the website.
-- `MoodBoard/`: Contains mood board files.
-- `ReferenceImages/`: Contains reference images and analysis files.
+.vscode/settings.json
+
+
+CSS/ResetSheet.cssStyleSheet.css
+
+
+Images/Index.html
+
+
+MoodBoard/MoodBoardColorPalette.pur
+
+
+ReferenceImages/CompetitiveAnalysis.pur
+
+GoogleFonts.pur
+
 
 ## Features
 
@@ -38,3 +47,36 @@ Welcome to the Systementor Zoo website project! This project is a static website
 - **JavaScript**: For interactive elements (if any).
 - **FontAwesome**: For icons.
 - **Google Fonts**: For custom fonts.
+
+## Setup
+
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+   ```
+2. Open the project in Visual Studio Code.
+
+## Usage
+
+1. Open `Index.html` in your web browser to view the website.
+2. Use the navigation bar to explore different sections of the website.
+
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
+
+Feel free to customize this `README.md` file according to your project's specific details and requirements.
+
+Similar code found with 1 license type
