@@ -150,6 +150,7 @@ nav ul li a:hover {
   z-index: -1; /* Put the image behind the text content */
 }
 .contentHeader {
+  padding-top: 8%;
   margin-left: 9%;
   color: var(--text-light);
 }
