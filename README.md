@@ -14,22 +14,13 @@ Welcome to the Systementor Zoo website project! This project is a static website
 
 ## Project Structure
 
-.vscode/settings.json
-
-
-CSS/ResetSheet.cssStyleSheet.css
-
-
-Images/Index.html
-
-
-MoodBoard/MoodBoardColorPalette.pur
-
-
-ReferenceImages/CompetitiveAnalysis.pur
-
-GoogleFonts.pur
-
+- [VS Code Settings](.vscode/settings.json)
+- [CSS Reset Sheet](CSS/ResetSheet.css)
+- [Stylesheet](CSS/StyleSheet.css)
+- [HTML Index File](Images/Index.html)
+- [Mood Board Color Palette](MoodBoard/MoodBoardColorPalette.pur)
+- [Competitive Analysis](ReferenceImages/CompetitiveAnalysis.pur)
+- [Google Fonts](GoogleFonts.pur)
 
 ## Features
 
@@ -51,9 +42,8 @@ GoogleFonts.pur
 ## Setup
 
 1. Clone the repository:
-   ```sh
    git clone <repository-url>
-   ```
+
 2. Open the project in Visual Studio Code.
 
 ## Usage
